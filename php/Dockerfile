@@ -1,13 +1,11 @@
-FROM php:7.2.4-apache
+FROM php:7.2-apache
 
-RUN apt update && apt install -y zlib1g-dev g++ libicu-dev zip libzip-dev zip libpq-dev \
+RUN apt update && apt install -y zlib1g-dev g++ libicu-dev zip libzip-dev zip libpq-dev vim git\
     && docker-php-ext-install intl opcache pdo pgsql pdo_pgsql \
     && pecl install apcu \
     && docker-php-ext-enable apcu \
     && docker-php-ext-configure zip \
-    && docker-php-ext-install zip \
-    && apt-get install -y git \
-    && apt-get install vim \
+    && docker-php-ext-install zip \    
     && a2enmod rewrite
 
 
