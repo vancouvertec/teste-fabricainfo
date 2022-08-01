@@ -3,38 +3,35 @@
 # Sistema de Gerenciamento de Alunos
 Teste da empresa fabricainfo - laravel 8 + Docker + Vue.js
 
+## Instalar as dependências do projeto
+# Fazer o build do container
+```bash
+ docker-compose up -d --build
+```
+# Acessar o container dentro do projeto
+```bash
+ docker-compose exec php bash
+```
+# Criar a pasta vendor dentro do container
+```bash
+ docker-compose exec php bash
+```
+
 ## Acessar o projeto
-
-Fazer o build do container
-
+# Acessar o container dentro do projeto e instalar as dependências - /var/www/html
 ```bash
-  docker-compose up -d --build  
+ mkdir vendor
+ cd vendor
+ composer install
 ```
-
-Acessar o container dentro do projeto
-
+# Parar iniciar o laravel
 ```bash
-  docker-compose exec php bash 
+ php artisan serve
 ```
-
-Levantar o container do projeto
-
-```bash
-  docker-compose up 
-```
-
-Parar o container do projeto
-
-```bash
-  docker-compose stop 
-```
-
-Acessar o Laravel do projeto 
-
+# Acessar o Laravel do projeto 
 ```bash
   http://localhost:8080
 ```
-
 Acessar o pgadmin4 para ver as tabelas
 E-mail: admin@admin.com / Senha: root
 ```bash
