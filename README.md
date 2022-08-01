@@ -1,3 +1,5 @@
+![Logo](https://www.fabricainfo.com/wp-content/uploads/2015/07/logo1.png)
+
 # teste-fabricainfo
 Teste da empresa fabricainfo - laravel 8 + Docker + Vue.js
 
