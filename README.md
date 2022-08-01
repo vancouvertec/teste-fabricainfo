@@ -34,7 +34,7 @@ Acessar o Laravel do projeto
 ```
 
 Acessar o pgadmin4 para ver as tabelas
-Acesso / E-mail: admin@admin.com / Senha: root
+E-mail: admin@admin.com / Senha: root
 ```bash
   http://localhost:5050
 ```
